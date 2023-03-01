@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signin.LoginActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:src="@drawable/v_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/background_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:text="Log in your Account"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/email_log_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="center"
+                android:hint="email"
+                android:includeFontPadding="true"
+                android:inputType="textEmailAddress"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/password_log_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--&lt;!&ndash; Login Button &ndash;&gt;-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="16dp"
+                android:id="@+id/login_master"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="8dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:layout_gravity="left"
+                        android:src="@drawable/enter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_marginLeft="24dp"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMain"/>
+
+                    <TextView
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/rubik_bold"
+                        android:gravity="center"
+                        android:text="LogIn"
+                        android:textColor="@color/colorMain"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:text="Forgot Password"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:paddingBottom="16dp"
+            android:onClick="goRegister"
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:background="@null"
+            android:text="Not a Member? Register now."
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:fontFamily="@font/amiko"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

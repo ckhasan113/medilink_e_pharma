@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/getRequestDetails"
+    android:background="@drawable/button_doctor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/request_user_iv"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="30dp"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/v_doctor"
+            />
+
+        <TextView
+            tools:text="Name"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/request_user_name_TV"
+            android:layout_alignTop="@+id/request_user_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/request_user_iv"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            tools:text="Address"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/request_user_address_tv"
+            android:layout_below="@id/request_user_name_TV"
+            android:layout_alignStart="@+id/request_user_name_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            tools:text="Price: "
+            android:textColor="#F44336"
+            android:gravity="center"
+            android:id="@+id/request_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/request_user_address_tv"
+            android:layout_alignStart="@+id/request_user_name_TV"/>
+
+        <!--<LinearLayout
+            android:id="@+id/request_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/request_user_address_tv"
+            android:layout_alignStart="@+id/request_user_name_TV">
+
+            <TextView
+                android:layout_weight="1"
+                tools:text="Price: "
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:id="@+id/request_price_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                tools:text="Quantity: "
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:id="@+id/request_quantity_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="5dp"/>
+
+        </LinearLayout>-->
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/request_price_tv"
+            android:background="@drawable/client_request"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Get Details"/>
+    </RelativeLayout>
+
+</LinearLayout>
